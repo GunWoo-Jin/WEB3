@@ -26,7 +26,7 @@ class App {
         this.ctx.scale(2, 2);
     }
 
-    animate() {
+    animate(t) {
         window.requestAnimationFrame(this.animate.bind(this));
 
         this.ball.draw(this.ctx, this.stageWidth, this.stageHeight)
